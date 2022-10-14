@@ -4,7 +4,6 @@ import io.restassured.response.ValidatableResponse;
 
 public class OrdersClient extends BaseOrders {
 
-
     private final String ORDERS = "/orders";
 
     public ValidatableResponse createWithoutAuth(Orders order) {

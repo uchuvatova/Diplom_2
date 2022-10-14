@@ -57,7 +57,6 @@ public class CreateOrderTest extends Setup {
                 .and()
                 .body("message", is("Ingredient ids must be provided"));
     }
-
     @Test
     @DisplayName("Создание заказа с неверным хешем ингредиентов")
     public void shouldNotCreateWithInvalidHash() {

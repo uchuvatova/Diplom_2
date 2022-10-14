@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: users.AddUserTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.494 s - in users.AddUserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.652 s - in users.AddUserTest

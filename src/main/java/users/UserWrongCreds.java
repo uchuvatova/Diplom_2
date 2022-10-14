@@ -2,7 +2,6 @@ package users;
 import lombok.Data;
 
 @Data
-
 public class UserWrongCreds {
 
     private String email;

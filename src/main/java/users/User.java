@@ -39,7 +39,6 @@ public class User {
                 "P@ssw0rd",
                 "");
     }
-
     public String getEmail() {
         return email;
     }

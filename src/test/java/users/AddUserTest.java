@@ -17,7 +17,6 @@ public class AddUserTest {
         user = User.getRandomUser();
         userClient = new UserClient();
     }
-
     @Test
     @DisplayName("Создание уникального пользователя")
     public void createValidUserTest() {

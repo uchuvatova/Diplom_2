@@ -13,7 +13,6 @@ public class Ingredients {
 
     public Ingredients() {
     }
-
     public Ingredients(Boolean success, List<IngredientData> data) {
         this.success = success;
         this.data = data;

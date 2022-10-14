@@ -24,7 +24,6 @@ public class Setup {
                 .and()
                 .statusCode(200);
     }
-
     public void setUpOrder(String accessToken) {
         ingredientClient = new IngredientClient();
         orderClient = new OrdersClient();

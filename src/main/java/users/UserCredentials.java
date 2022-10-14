@@ -22,7 +22,6 @@ public class UserCredentials {
         this.name = name;
 
     }
-
     public static users.UserCredentials from(User user) {
 
         return new users.UserCredentials(user.getEmail(), user.getPassword(), user.getName() );

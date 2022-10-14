@@ -25,7 +25,6 @@ public class Orders {
         }
         return orders;
     }
-
     public static Orders withHash(String hash) {
         Orders orders = new Orders();
         orders.ingredients = new ArrayList<>();

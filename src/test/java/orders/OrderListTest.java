@@ -3,7 +3,6 @@ package orders;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import setup.Setup;
-
 import static org.hamcrest.Matchers.*;
 
 @DisplayName("Получение заказов конкретного пользователя")

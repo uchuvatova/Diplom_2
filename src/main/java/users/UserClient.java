@@ -19,7 +19,6 @@ public class UserClient extends BaseClient {
                 .post(REGISTER)
                 .then().log().all();
     }
-
     @Step("Создание пользователя с незаполненными данными")
     public ValidatableResponse createFailed(User user) {
         return getSpec()

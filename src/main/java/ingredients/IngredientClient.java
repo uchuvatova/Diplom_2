@@ -2,6 +2,7 @@ package ingredients;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class IngredientClient extends BaseClient {
     private final String INGRED = "/ingredients";
             public List<String> getIngredients() {

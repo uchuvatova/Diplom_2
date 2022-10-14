@@ -25,7 +25,6 @@ public class LoginUserTest {
         assertTrue(success);
     }
 
-
     @Test
     @DisplayName("Логин с неверным логином и паролем")
     public void loginWrongCredsTest() {

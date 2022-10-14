@@ -11,7 +11,6 @@ public class ChangeUserTest {
     private boolean success;
     private String accessToken;
 
-
     @Before
     public void setup() {
         user = User.getRandomUser();

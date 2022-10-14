@@ -16,7 +16,6 @@ public class IngredientData {
 
     public IngredientData() {
     }
-
     public IngredientData(String _id) {
         this._id = _id;
     }
