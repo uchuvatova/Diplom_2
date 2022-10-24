@@ -1,5 +1,5 @@
-package ingredients;
-import config.Config;
+package config;
+
 import io.restassured.specification.RequestSpecification;
 import static io.restassured.RestAssured.given;
 

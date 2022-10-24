@@ -1,4 +1,6 @@
 package ingredients;
+import config.BaseClient;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,15 +1,16 @@
 package users;
+import config.BaseClient;
 import io.qameta.allure.Step;
 import io.restassured.response.ValidatableResponse;
 import static users.UserCredentials.loginData;
 
 public class UserClient extends BaseClient {
 
-    private final String ROOT = "/auth";
-    private final String REGISTER = ROOT + "/register";
-    private final String LOGIN = ROOT + "/login";
-    private final String LOGOUT = ROOT + "/logout";
-    private final String USER = ROOT + "/user";
+    private static final String ROOT = "/auth";
+    private static final String REGISTER = ROOT + "/register";
+    private static final String LOGIN = ROOT + "/login";
+    private static final String LOGOUT = ROOT + "/logout";
+    private static final String USER = ROOT + "/user";
 
     @Step("Создание нового пользователя")
     public ValidatableResponse create(User user) {

@@ -1,8 +1,9 @@
 package orders;
 
+import config.BaseClient;
 import io.restassured.response.ValidatableResponse;
 
-public class OrdersClient extends BaseOrders {
+public class OrdersClient extends BaseClient {
 
     private final String ORDERS = "/orders";
 
