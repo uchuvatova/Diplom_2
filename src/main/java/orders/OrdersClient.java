@@ -1,29 +1,14 @@
 package orders;
 
 import config.BaseClient;
+import io.qameta.allure.Step;
 import io.restassured.response.ValidatableResponse;
 
 public class OrdersClient extends BaseClient {
 
-    private final String ORDERS = "/orders";
-
-    public ValidatableResponse createWithoutAuth(Orders order) {
-        return getSpec()
-                .and()
-                .body(order)
-                .when()
-                .post(ORDERS)
-                .then().log().all();
-    }
-
-    public ValidatableResponse createWithoutIngr() {
-        return getSpec()
-                .when()
-                .post(ORDERS)
-                .then().log().all();
-
-    }
-    public ValidatableResponse createWithAuth(String accessToken, Orders order) {
+    private static final String ORDERS = "/orders";
+    @Step("Создание заказа")
+    public ValidatableResponse createOrder(Orders order, String accessToken) {
         return getSpec()
                 .header("Authorization", accessToken)
                 .and()
@@ -32,7 +17,8 @@ public class OrdersClient extends BaseClient {
                 .post(ORDERS)
                 .then().log().all();
     }
-    public ValidatableResponse getWithAuth(String accessToken) {
+    @Step("Получение заказов пользователя")
+    public ValidatableResponse getOrders(String accessToken) {
         return getSpec()
                 .header("Authorization", accessToken)
                 .when()

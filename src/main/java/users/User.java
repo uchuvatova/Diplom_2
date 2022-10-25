@@ -1,4 +1,5 @@
 package users;
+import io.qameta.allure.Step;
 import org.apache.commons.lang3.RandomStringUtils;
 public class User {
     private String email;
@@ -15,18 +16,15 @@ public class User {
         return new User(
                 RandomStringUtils.randomAlphanumeric(10) + "@yandex.ru",
                 "P@ssw0rd",
-                RandomStringUtils.randomAlphabetic(10)
-        );
+                RandomStringUtils.randomAlphabetic(10));
     }
     public static User getWithoutPassword() {
-
         return new User(
                 RandomStringUtils.randomAlphanumeric(10) + "@yandex.ru",
                 "",
-                RandomStringUtils.randomAlphabetic(10) );
+                RandomStringUtils.randomAlphabetic(10));
     }
     public static User getWithoutEmail() {
-
         return new User(
                 "",
                 "P@ssw0rd",
@@ -59,7 +57,7 @@ public class User {
         return name;
     }
 
-    public void setName(String firstName) {
+    public void setName(String name) {
         this.name = name;
     }
 

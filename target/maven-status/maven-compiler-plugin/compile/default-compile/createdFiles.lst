@@ -1,13 +1,9 @@
+ingredients\IngredientData.class
+config\BaseClient.class
 orders\OrdersClient.class
 config\Config.class
 ingredients\IngredientClient.class
-ingredients\BaseClient.class
-orders\BaseOrders.class
-users\UserWrongCreds.class
-ingredients\IngredientData.class
-users\UserCredentials.class
 users\UserClient.class
 orders\Orders.class
 users\User.class
 ingredients\Ingredients.class
-users\BaseClient.class

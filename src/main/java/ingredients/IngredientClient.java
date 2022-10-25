@@ -6,7 +6,7 @@ import java.util.List;
 
 
 public class IngredientClient extends BaseClient {
-    private final String INGRED = "/ingredients";
+    private static final String INGRED = "/ingredients";
             public List<String> getIngredients() {
             List<String> ingredientIds = new ArrayList<>();
             Ingredients ingr = getSpec()

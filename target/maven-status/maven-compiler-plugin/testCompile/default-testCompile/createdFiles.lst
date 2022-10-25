@@ -1,5 +1,4 @@
 orders\OrderListTest.class
-setup\Setup.class
 users\AddUserTest.class
 users\ChangeUserTest.class
 orders\CreateOrderTest.class
